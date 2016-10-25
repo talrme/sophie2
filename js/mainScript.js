@@ -54,7 +54,7 @@ function getBusInfo(route,routeTitle,stopID,divAttr){
 	var loadedIndex = loaded.length;
 	loaded[loadedIndex] = false;
 
-	var URL = "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=actransit&r="+route+"&s="+stopID;
+	var URL = "https://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=actransit&r="+route+"&s="+stopID;
 	$.ajax({
 		url: URL,
 		dataType: "xml",
