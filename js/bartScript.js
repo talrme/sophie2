@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
 function getInfo(station, div, requiredDirection,requiredDestination){
 // note: required destination may be an array!	
-	var URL = "http://api.bart.gov/api/etd.aspx?cmd=etd&orig="+station+"&key=MW9S-E7SL-26DU-VV8V";
+	var URL = "https://api.bart.gov/api/etd.aspx?cmd=etd&orig="+station+"&key=MW9S-E7SL-26DU-VV8V";
 	
 	$.ajax({
 		url: URL,
